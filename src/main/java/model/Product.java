@@ -1,15 +1,12 @@
 package model;
 
-import java.util.Set;
-
 public class Product {
     private String articleID;
     private String name;
     private String brand;
-    private Double basePrice;
-    private Double salePrice;
+    private String basePrice;
+    private String salePrice;
     private String color;
-    private Set<String> availableSizes;
 
     public Product() {
     }
@@ -38,19 +35,19 @@ public class Product {
         this.brand = brand;
     }
 
-    public Double getBasePrice() {
+    public String getBasePrice() {
         return basePrice;
     }
 
-    public void setBasePrice(Double basePrice) {
+    public void setBasePrice(String basePrice) {
         this.basePrice = basePrice;
     }
 
-    public Double getSalePrice() {
+    public String getSalePrice() {
         return salePrice;
     }
 
-    public void setSalePrice(Double salePrice) {
+    public void setSalePrice(String salePrice) {
         this.salePrice = salePrice;
     }
 
@@ -60,13 +57,5 @@ public class Product {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public Set<String> getAvailableSizes() {
-        return availableSizes;
-    }
-
-    public void setAvailableSizes(Set<String> availableSizes) {
-        this.availableSizes = availableSizes;
     }
 }
