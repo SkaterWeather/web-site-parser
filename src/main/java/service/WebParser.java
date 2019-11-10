@@ -41,7 +41,7 @@ public class WebParser {
 
     private void parsePageIntoProductLinks() {
         Document document = getDocumentFromUrl(PARSE_URL).orElseThrow();
-        String productRowClass = "MixedTileRowContainer-sc-1n50fuf-0 hzvjNO";
+        String productRowClass = "sc-1n50fuf-0 kOgykq";
 
         Elements mainContainerRows = parserHelper.getMainContainerRows(document);
         for (Element row : mainContainerRows) {
@@ -85,7 +85,7 @@ public class WebParser {
             Document document = Jsoup.connect(CONTEXT_PATH + url)
                     .userAgent("Chrome/51.0.2704.103")
                     .cookie("auth", "token")
-                    .timeout(3000)
+                    .timeout(20000)
                     .method(Connection.Method.GET)
                     .execute()
                     .parse();
