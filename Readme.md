@@ -1,8 +1,8 @@
 ## WebSiteParser
 
 ## Update!
-Seems like parse data by select class="smth" is unsafe method, because targeted site autogenerates 
-different class names in from time to time. So I guess, the correct way in to parse by attribute "data-test-id"
+Seems like parse data by select class="smth" is unsafe methodology, because targeted site autogenerates 
+different class names from time to time. So I guess, the correct way is to parse by attribute "data-test-id"
 as I did it in ParserHelper.getProductArticle() method. Will be updated.
 
 ## Description
