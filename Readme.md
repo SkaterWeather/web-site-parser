@@ -1,5 +1,10 @@
 ## WebSiteParser
 
+##Update!
+Seems like parse data by select class="smth" is unsafe method, because targeted site autogenerates 
+different class names in from time to time. So I guess, the correct way in to parse by attribute "data-test-id"
+as I did it in ParserHelper.getProductArticle() method. Will be updated.
+
 ## Description
 Web site parser extracts needed data from Product pages and convert them 
 into a valid JSON file. Program could avoid bot detection mechanism by leaving cookies, userAgent data.
