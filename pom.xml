@@ -29,6 +29,7 @@
     </dependencies>
 
     <build>
+        <finalName>executableWebParser</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
